@@ -38,13 +38,13 @@ class Graf {
         return waga;
     }
 
-    // Dodaj metodę do pobierania wszystkich wierzchołków grafu
+  
     public Map<Character, Map<Character, Integer>> getWierzcholki() {
         return wierzcholki;
     }
 }
 
-// Przykładowe użycie:
+
 public class Main {
     public static void main(String[] args) {
         Graf graf = new Graf();
@@ -65,7 +65,7 @@ public class Main {
         Map<Character, Map<Character, Integer>> wierzcholki = graf.getWierzcholki();
         System.out.println("Wierzchołki: " + wierzcholki.keySet());
 
-        // Wyświetlenie sąsiadów dla każdego wierzchołka
+      
         for (char wierzcholek : wierzcholki.keySet()) {
             System.out.println("Sąsiedzi wierzchołka '" + wierzcholek + "': " + graf.getSasiadow(wierzcholek));
         }
